@@ -64,14 +64,12 @@ module tt_um_async_proc_paulschulz (
   
   reg [3:0] node_out;
   // instantiate node
-  
-
   node_arctic node_arctic(.clk(clk),
                            .rnd(1'b0),
-                           .A(4'b_0100),
-                           .B(4'b_0000),
-                           .C(4'b_0000),
-                           .D(4'b_0000),
+                           .A(4'b0100),
+                           .B(4'b0000),
+                           .C(4'b0000),
+                           .D(4'b0000),
                            .out(node_out));
 
 endmodule
