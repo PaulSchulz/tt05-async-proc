@@ -16,17 +16,17 @@ module node_arctic (clk,rnd,A,B,C,D,out);
 
   always @(*)
   begin
-    out = 4'b_0000;
+    out = 4'b0000;
       if(A[2]&&C[0] ^^ B[3]&&D[1])
-        out = 4'b_0000;
+        out = 4'b0000;
       else if(A[2]) 
-        out = 4'b_0100;
+        out = 4'b0100;
       else if(C[0])
-        out = 4'b_0001;
+        out = 4'b0001;
       else if(B[3])
-        out = 4'b_1000;
+        out = 4'b1000;
       else if(D[1])
-        out = 4'b_0010;
+        out = 4'b0010;
       else if(A[1] || A[3]
         || B[0] || B[2]
         || C[1] || C[3]
