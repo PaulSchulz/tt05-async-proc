@@ -12,7 +12,7 @@ ifneq ($(GATES),yes)
 VERILOG_SOURCES += \
   $(PWD)/tb.v \
   $(PWD)/tt_um_async_proc_paulschulz.v \
-  $(PWD)/decoder.v
+  $(PWD)/node_async.v
 
 else
 

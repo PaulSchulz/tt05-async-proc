@@ -2,7 +2,6 @@
 // SPDX-FileCopyrightText: © 2023 Paul Schulz <paul@mawsonlakes.org>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-`include "node_arctic.v"
 `default_nettype none
 
 module tt_um_async_proc_paulschulz (
@@ -16,10 +15,10 @@ module tt_um_async_proc_paulschulz (
   input  wire       rst_n     // reset_n - low to reset
   );
 
-   wire  reset = ! rst_n;
-   wire  [6:0] led_out;
-   assign uo_out[6:0] = led_out;
-   assign uo_out[7]   = 1'b0;
+   // wire  reset = ! rst_n;
+   // wire  [6:0] led_out;
+   // assign uo_out[6:0] = led_out;
+   // assign uo_out[7]   = 1'b0;
 
    // use bidirectionals as outputs
    assign uio_oe = 8'b11111111;

@@ -1,11 +1,5 @@
 // Node logic for running the 'Arctic Circle' calculation
-
-`ifndef N_ARCTIC_H
-`define N_ARCTIC_H
-
-module node_arctic (clk,rnd,A,B,C,D,out);
-  input clk;
-  input rnd;
+module node_arctic (A,B,C,D,rnd,out,clk,rst_n);
 
   parameter N = 3;	// default width = 4 bits
   input  [N:0] A;	// A input
@@ -14,9 +8,15 @@ module node_arctic (clk,rnd,A,B,C,D,out);
   input  [N:0] D;	// D input
   output reg [N:0] out;	// 
 
-  always @(*)
-  begin
-    out = 4'b0000;
+  input rnd;        // Random bit
+  input clk;
+  input rst_n;
+
+  always @(posedge clk) begin
+    if(!rst_n) begin
+      out = {4'b0000};
+    end else begin
+      out = 4'b0000;
       if(A[2]&&C[0] ^^ B[3]&&D[1])
         out = 4'b0000;
       else if(A[2]) 
@@ -35,7 +35,6 @@ module node_arctic (clk,rnd,A,B,C,D,out);
           out = {4'b1010};
         else
           out = {4'b0101};
+    end
   end
 endmodule
-
-`endif
