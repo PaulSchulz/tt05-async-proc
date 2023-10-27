@@ -2,8 +2,7 @@
 // SPDX-FileCopyrightText: © 2023 Paul Schulz <paul@mawsonlakes.org>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-`include node_arctic.v
-
+`include "node_arctic.v"
 `default_nettype none
 
 module tt_um_async_proc_paulschulz (
@@ -60,13 +59,19 @@ module tt_um_async_proc_paulschulz (
       end
    end
 
-   // instantiate node
-   node_arctic node_arctic(.clk(clk),
-                           .rnd(1'b0)
-                           .A(4'b_0000)
-                           .B(4'b_0000)
-                           .C(4'b_0000)
-                           .D(4'b_0000)
-                           .out(led_out));
+  always @(*)
+    led_out = {3'd0,node_out};  
+  
+  reg [3:0] node_out;
+  // instantiate node
+  
+
+  node_arctic node_arctic(.clk(clk),
+                           .rnd(1'b0),
+                           .A(4'b_0100),
+                           .B(4'b_0000),
+                           .C(4'b_0000),
+                           .D(4'b_0000),
+                           .out(node_out));
 
 endmodule
