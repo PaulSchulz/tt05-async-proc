@@ -1,5 +1,22 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
+# Tiny Tapeout 05 Submission (Verilog)
+
+TinyTapeout is an educational project that aims to make it easier and cheaper to have
+digital designs manufactured on a real chip.
+
+To learn more and get started, visit https://tinytapeout.com.
+
+This repository has been cloned from the Tiny Tapeout 05 Verilog Demo Template
+* https://github.com/TinyTapeout/tt05-verilog-demo
+
+Design details are automatically published here, via github actions:
+* https://paulschulz.github.io/tt05-submission-verilog/
+
+The following details came from the original README submission template repository.
+
+---
+
 # What is Tiny Tapeout?
 
 TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
