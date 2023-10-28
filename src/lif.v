@@ -20,13 +20,14 @@ module lif (
     assign spike = (state >= threshold);
 
     always @(posedge clk) begin
+       out <= {D[0],C[0],B[0],A[0]};
        if (!rst_n) begin
            state <= 0;
            threshold <= 32;
        end else begin
            state <= next_state;
        end 
-       out <= {D[0],C[0],B[0],A[0]}
-   end
+
+    end
 
 endmodule
