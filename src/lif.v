@@ -1,3 +1,5 @@
+`include "lfsr.v"
+
 module lif (
     input  wire [3:0] in1,
     input  wire [3:0] in2,
