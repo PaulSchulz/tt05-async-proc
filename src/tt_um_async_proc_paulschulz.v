@@ -9,15 +9,17 @@ module tt_um_async_proc_paulschulz  (
     input  wire       ena,      // will go high when the design is enabled
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
-);
-
-
+    );
 
     // use bidirectionals as outputs
     assign uio_oe = 8'b11111111;
     assign uio_out [7:1] = 7'd0;
 
-    // instantiate lif neuron
-    lif lif1 (.current(ui_in), .next_state(uo_out), .spike(uio_out[0]), .clk(clk), .rst_n(rst_n));
+    // instantiate node
+    lif lif1 (.current(ui_in),
+              .next_state(uo_out),
+              .spike(uio_out[0]),
+              .clk(clk),
+              .rst_n(rst_n));
 
 endmodule
