@@ -5,7 +5,7 @@ module lif (
     input  wire [3:0] in4,
     output wire [3:0] out,
 
-    input wire 	      rnd,
+//    input wire 	      rnd,
     input  wire       clk,
     input  wire       rst_n
     );
@@ -40,4 +40,5 @@ module lif (
        end
     end
 
+    LFSR lfsr(.clk(clk), .reset(1'b0), .enable(1'b1), .lfsr(rnd));
 endmodule
