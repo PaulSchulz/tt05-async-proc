@@ -16,10 +16,10 @@ module tt_um_async_proc_paulschulz  (
     assign uio_out [7:1] = 7'd0;
 
     // instantiate node
-    node_async node1 (.current(ui_in),
-                      .next_state(uo_out),
-                      .spike(uio_out[0]),
-                      .clk(clk),
-                      .rst_n(rst_n));
+    lif node1 (.current(ui_in),
+               .next_state(uo_out),
+               .spike(uio_out[0]),
+               .clk(clk),
+               .rst_n(rst_n));
 
 endmodule
