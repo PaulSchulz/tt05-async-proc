@@ -10,7 +10,8 @@ module lif (
     input  wire       rst_n
     );
 
-    reg [3:0] state;
+    reg  [3:0] state;
+    reg [15:0] rnd;
     
     assign out = state;
 
@@ -33,7 +34,7 @@ module lif (
                 || in2[0] || in2[2]
                 || in3[1] || in3[3]
                 || in4[0] || in4[2])
-              if (rnd)
+              if (rnd[15])
                   state <= 4'b1010;
               else
                   state <= 4'b0101;
