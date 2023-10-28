@@ -22,9 +22,10 @@ module tt_um_async_proc_paulschulz  (
                .D(ui_in[3:0]),
                .out(uio_out[7:4]),
 
-               .current(ui_in),
-               .next_state(uo_out),
-               .spike(uio_out[0]),
+               // .current(ui_in),
+               // .next_state(uo_out),
+               // .spike(uio_out[0]),
+
                .clk(clk),
                .rst_n(rst_n));
 
