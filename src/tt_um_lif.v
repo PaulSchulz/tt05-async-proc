@@ -19,3 +19,5 @@ module tt_um_lif  (
 
     // instantiate lif neuron
     lif lif1 (.current(ui_in), .next_state(uo_out), .spike(uio_out[0]), .clk(clk), .rst_n(rst_n));
+
+endmodule
