@@ -17,9 +17,12 @@ module lif (
        if (!rst_n) begin
            state <= 0;
        end else begin
-           state <= {in4[0],in3[0],in2[0],in1[0]};
+           state = 4’b0000;
+           if (in1[2]&&in3[0] ^^ in2[3]&&in4[1])
+               state = 4’b0000;
+           else if(in1[2])
+               state = 4’b0100;
        end 
-
     end
 
 endmodule
