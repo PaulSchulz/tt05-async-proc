@@ -19,8 +19,9 @@ module lif (
     assign next_state = current + (state >> 1);
     assign spike = (state >= threshold);
 
+    assign out = {D[0],C[0],B[0],A[0]};
+
     always @(posedge clk) begin
-       out <= {D[0],C[0],B[0],A[0]};
        if (!rst_n) begin
            state <= 0;
            threshold <= 32;
