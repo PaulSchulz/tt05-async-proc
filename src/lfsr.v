@@ -1,12 +1,6 @@
+// Configurable Linear Feedback Shift Register.
 
-`ifndef LFSR_V
-`define LFSR_V
-
-/*
-Configurable Linear Feedback Shift Register.
-*/
-
-module LFSR(clk, reset, enable, lfsr);
+module lfsr(clk, reset, enable, lfsr);
 
     parameter TAPS   = 16'b0000000000011101;	// bitmask for taps
     parameter INVERT = 0;		                // invert feedback bit?
@@ -27,5 +21,3 @@ module LFSR(clk, reset, enable, lfsr);
     end
 
 endmodule
-
-`endif

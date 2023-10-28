@@ -1,4 +1,4 @@
-`include "lfsr.v"
+// `include "lfsr.v"
 
 module lif (
     input  wire [3:0] in1,
@@ -43,5 +43,5 @@ module lif (
        end
     end
 
-    LFSR lfsr(.clk(clk), .reset(1'b0), .enable(1'b1), .lfsr(rnd));
+    lfsr lfsr(.clk(clk), .reset(1'b0), .enable(1'b1), .lfsr(rnd));
 endmodule
