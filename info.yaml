@@ -12,7 +12,7 @@ project:
   source_files:        
     - tt_um_lif.v
     - lif.v
-  top_module:  "tt_um_lif"
+  top_module:  "tt_um_async_proc_paulschulz"
     # Put the name of your top module here, must start with "tt_um_". Make it
   # unique by including your github username
 
