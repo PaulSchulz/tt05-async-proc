@@ -1,4 +1,4 @@
-// `include "lfsr.v"
+`include "lfsr.v"
 
 module lif (
     input  wire [3:0] in1,
@@ -7,14 +7,13 @@ module lif (
     input  wire [3:0] in4,
     output wire [3:0] out,
 
-//    input wire 	      rnd,
     input  wire       clk,
     input  wire       rst_n
     );
 
     reg  [3:0] state;
     reg [15:0] rnd;
-    
+
     assign out = state;
 
     always @(posedge clk) begin
