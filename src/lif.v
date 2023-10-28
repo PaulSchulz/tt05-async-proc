@@ -15,14 +15,14 @@ module lif (
 
     always @(posedge clk) begin
        if (!rst_n) begin
-           state <= 0;
+           state = 0;
        end else begin
-           state = 4’b0000;
+           state = 4'b0000;
            if (in1[2]&&in3[0] ^^ in2[3]&&in4[1])
-               state = 4’b0000;
-           else if(in1[2])
-               state = 4’b0100;
-       end 
+               state = 4'b0000;
+           else if (in1[2])
+               state = 4'b0100;
+       end
     end
 
 endmodule
