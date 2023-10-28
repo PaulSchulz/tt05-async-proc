@@ -1,8 +1,8 @@
 module lif (
-    input  wire [3:0] A,
-    input  wire [3:0] B,
-    input  wire [3:0] C,
-    input  wire [3:0] D,
+    input  wire [3:0] in1,
+    input  wire [3:0] in2,
+    input  wire [3:0] in3,
+    input  wire [3:0] in4,
     output wire [3:0] out,
     
 //    input  wire [7:0] current,
