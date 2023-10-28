@@ -13,10 +13,16 @@ module tt_um_async_proc_paulschulz  (
 
     // use bidirectionals as outputs
     assign uio_oe = 8'b11111111;
-    assign uio_out [7:1] = 7'd0;
+    assign uio_out [3:1] = 3'd0;
 
     // instantiate node
-    lif node1 (.current(ui_in),
+    lif node1 (.A(ui_in[3:0]),
+               .B(ui_in[3:0]),
+               .C(ui_in[3:0]),
+               .D(ui_in[3:0]),
+               .out(uio_out[7:4]),
+
+               .current(ui_in),
                .next_state(uo_out),
                .spike(uio_out[0]),
                .clk(clk),

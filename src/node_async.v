@@ -1,4 +1,4 @@
-// Temporary file. Generic (NULL) Node
+// Generic Async Node
 
 module node_async (
    input  wire [7:0] current,
