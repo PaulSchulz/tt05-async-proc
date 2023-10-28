@@ -13,7 +13,7 @@ module tt_um_async_proc_paulschulz  (
 
     // use bidirectionals as outputs
     assign uio_oe = 8'b11111111;
-    assign uio_out [3:1] = 3'd0;
+    assign uio_out [3:0] = 4'd0;
 
     assign uo_out [7:0] = 8'd0;
 
