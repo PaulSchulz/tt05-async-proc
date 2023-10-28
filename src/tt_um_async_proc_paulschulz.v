@@ -15,6 +15,8 @@ module tt_um_async_proc_paulschulz  (
     assign uio_oe = 8'b11111111;
     assign uio_out [3:1] = 3'd0;
 
+    assign uo_out [7:0] = 8'd0;
+
     // instantiate node
     lif node1 (.A(ui_in[3:0]),
                .B(ui_in[3:0]),
