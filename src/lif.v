@@ -45,7 +45,7 @@ module lif (
        end
     end
 
-    lfsr lfsr(.clk(clk), .reset(1'b0), .enable(1'b1), .lfsr(rnd));
+    lfsr lfsr1(.clk(clk), .reset(1'b0), .enable(1'b1), .lfsr(rnd));
 endmodule
 
 `endif

@@ -21,3 +21,6 @@ When enabled, performs calculation on the input and make result available on out
 Description: IO layer between nodes.
 
 An node in contained in a block module, which adds IO support to a calculation node.
+
+** buffer_
+Description: Internal storage buffers
