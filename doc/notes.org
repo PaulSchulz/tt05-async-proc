@@ -1,0 +1,7 @@
+#+TITLE: Project Notes
+
+* Introduction
+
+* Progress Log
+
+| Tue, 31 Oct 2023 | 0b79e659 | Initial Submission | Passed gda, tests, and doc | Util: 1.49% WL: 723um |

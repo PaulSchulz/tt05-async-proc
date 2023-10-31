@@ -24,23 +24,28 @@ yaml_version: 4
 # URL: https://github.com/PaulSchulz/tt05-submission-verilog
 documentation: 
   author:       "Paul Schulz"
-  title:        "Async Parallel Processor Demonstrator"
+  title:        "Asynchronous  Parallel Processor Demonstrator"
   language:     "Verilog" # other examples include Verilog, Amaranth, VHDL, etc
   # Short description
-  description:  "Asynchronous Parallel Processor Model"
+  description:  "Implementation for an Asynchronous Parallel Processor"
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
     This circuit is an investigation into an asynchronous parallel processor.
 
+    The design in a work in progress, set in stages.
+
+    Note: This is a very early design, which doesn't yet do much.
+    
     A processing node follows the following state flow:
     - Wait for valid data;
-    - Process the data to produce an output value, and let neighbors know that
-      processing in being done;
+    - Process the data to produce an output value, and let neighboring nodes
+      know that processing in being done;
     - Make the result available; and wait for more data to process.
 
     In this example, the processing node is doing a calculation on four(4)
-    inputs of 4 bits, based on the "Arctic Circle Theorem" model. ([video](https://www.youtube.com/watch?v=Yy7Q8IWNfHM))
+    inputs of 4 bits.  The calculation is based on a deconstruction of the
+    the "Arctic Circle Theorem" model. ([video](https://www.youtube.com/watch?v=Yy7Q8IWNfHM))
 
 # Instructions on how someone could test your project, include things like what
 # buttons do what and how to set the clock if needed
