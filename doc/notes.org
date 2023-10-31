@@ -5,3 +5,14 @@
 * Progress Log
 
 | Tue, 31 Oct 2023 | 0b79e659 | Initial Submission | Passed gda, tests, and doc | Util: 1.49% WL: 723um |
+
+* Modules
+** node_
+Description: Calculation node
+
+When enabled, performs calculation on the input and make result available on output.
+
+** block_
+Description: IO layer between nodes.
+
+An node in contained in a block module, which adds IO support to a calculation node.

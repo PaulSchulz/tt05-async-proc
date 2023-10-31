@@ -17,7 +17,7 @@ module tt_um_async_proc_paulschulz  (
 
     assign uo_out [7:0] = 8'd0;
 
-    // instantiate node
+    // instantiate
     block block1 (.in1(ui_in[3:0]),
                   .in2(ui_in[3:0]),
                   .in3(ui_in[3:0]),

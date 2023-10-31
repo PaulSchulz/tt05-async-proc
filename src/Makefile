@@ -13,12 +13,7 @@ ifneq ($(GATES),yes)
 #  $(PWD)/tb.v \
 #  $(PWD)/tt_um_async_proc_paulschulz.v \
 #  $(PWD)/node_async.v
-VERILOG_SOURCES += \
-  $(PWD)/tb.v \
-  $(PWD)/tt_um_async_proc_paulschulz.v \
-  $(PWD)/block.v \
-  $(PWD)/lif.v \
-  $(PWD)/lfsr.v
+VERILOG_SOURCES += $(PWD)/tb.v $(PWD)/tt_um_async_proc_paulschulz.v $(PWD)/block.v $(PWD)/lif.v $(PWD)/lfsr.v
 
 else
 
