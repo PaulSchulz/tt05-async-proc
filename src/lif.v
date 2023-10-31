@@ -1,3 +1,6 @@
+`ifndef LIF_V
+`define LIF_V
+
 `include "lfsr.v"
 
 module lif (
@@ -44,3 +47,5 @@ module lif (
 
     lfsr lfsr(.clk(clk), .reset(1'b0), .enable(1'b1), .lfsr(rnd));
 endmodule
+
+`endif

@@ -18,14 +18,13 @@ module tt_um_async_proc_paulschulz  (
     assign uo_out [7:0] = 8'd0;
 
     // instantiate node
-    lif node1 (.in1(ui_in[3:0]),
-               .in2(ui_in[3:0]),
-               .in3(ui_in[3:0]),
-               .in4(ui_in[3:0]),
-               .out(uio_out[7:4]),
+    block block1 (.in1(ui_in[3:0]),
+                  .in2(ui_in[3:0]),
+                  .in3(ui_in[3:0]),
+                  .in4(ui_in[3:0]),
+                  .out(uio_out[7:4]),
 
-               // .rnd(1'b0),
-               .clk(clk),
-               .rst_n(rst_n));
+                  .clk(clk),
+                  .rst_n(rst_n));
 
 endmodule
