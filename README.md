@@ -1,11 +1,9 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
-# Tiny Tapeout 05 Submission (Verilog)
+# Asynchronous Parallel Processor Demonstrator (Verilog)
 
-TinyTapeout is an educational project that aims to make it easier and cheaper to have
-digital designs manufactured on a real chip.
-
-To learn more and get started, visit https://tinytapeout.com.
+For the documentation automatically produced in the tapeout process, see the
+[datasheet](doc/datasheet.pdf).
 
 This repository has been cloned from the Tiny Tapeout 05 Verilog Demo Template
 * https://github.com/TinyTapeout/tt05-verilog-demo
