@@ -4,7 +4,12 @@
 
 * Progress Log
 
-| Tue, 31 Oct 2023 | 0b79e659 | Initial Submission | Passed gda, tests, and doc | Util: 1.49% WL: 723um |
+** Tue, 31 Oct 2023
+Commit: 0b79e659
+Comment: Initial Submission
+Description: Passed gda, tests, and doc
+Utilisaton: 1.49%
+Wire Length: 723um
 
 * Modules
 ** node_
