@@ -1,5 +1,7 @@
 `default_nettype none
 
+`include "block.v"
+
 module tt_um_async_proc_paulschulz  (
     input  wire [7:0] ui_in,    // Dedicated inputs - connected to the input switches
     output wire [7:0] uo_out,   // Dedicated outputs - connected to the 7 segment display
