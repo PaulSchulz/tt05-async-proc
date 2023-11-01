@@ -24,7 +24,7 @@ module block (
     assign out = buf_out;
 
     always @(posedge clk) begin
-        if (reset) begin
+        if (!rst_n) begin
             buf_in1 <= 0;
             buf_in2 <= 0;
             buf_in3 <= 0;
