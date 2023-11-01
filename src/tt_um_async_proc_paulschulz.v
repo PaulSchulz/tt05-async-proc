@@ -17,7 +17,7 @@ module tt_um_async_proc_paulschulz  (
     assign uio_oe = 8'b11111111;
     assign uio_out [3:0] = 4'd0;
 
-    assign uo_out [7:0] = 8'd0;
+    assign uo_out [7:4] = 4'd0;
 
     reg [3:0] bk_in1;
     reg [3:0] bk_in2;
@@ -60,7 +60,7 @@ module tt_um_async_proc_paulschulz  (
     // See: https://verilator.org/guide/latest/warnings.html#cmdoption-arg-UNUSEDSIGNAL
     wire _unused_ok = &{1'b0,
                     // ena,
-                    // uio_in,
+                    uio_in,
                     1'b0};
 
 
