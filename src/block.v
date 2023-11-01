@@ -29,11 +29,12 @@ module block (
             buf_in2 <= 0;
             buf_in3 <= 0;
             buf_in4 <= 0;
-        else
+        end else begin
             buf_in1 <= in1;
             buf_in2 <= in2;
             buf_in3 <= in3;
             buf_in4 <= in4;
+        end
     end
 
     // instantiate node
