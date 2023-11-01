@@ -59,7 +59,7 @@ module tt_um_async_proc_paulschulz  (
     // Added to remove 'unused input' warnings.
     // See: https://verilator.org/guide/latest/warnings.html#cmdoption-arg-UNUSEDSIGNAL
     wire _unused_ok = &{1'b0,
-                    // ena,
+                    ena,
                     uio_in,
                     1'b0};
 
