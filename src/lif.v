@@ -15,8 +15,8 @@ module lif (
     );
 
     reg  [3:0] state;
-    reg [15:0] rnd;
-    // wire [15:0] rnd;
+    // reg [15:0] rnd;
+    wire [15:0] rnd;
 
     assign out = state;
 
@@ -50,12 +50,12 @@ module lif (
 
     // Added to remove 'unused input' warnings.
     // See: https://verilator.org/guide/latest/warnings.html#cmdoption-arg-UNUSEDSIGNAL
-
     wire _unused_ok = &{1'b0,
-                    in1[0], // Part of algorithm
+                    in1[0],     // Part of algorithm
                     in2[1],
                     in3[2],
                     in4[3],
+                    lfsr[14:0], // Only top-most bit used
                     1'b0};
 
 endmodule
