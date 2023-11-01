@@ -36,13 +36,13 @@ module tt_um_async_proc_paulschulz  (
         end else begin
             // Toggle inputs into registers
             if (ui_in[4] == 1'b1)
-              bk_in1 = ui_in[3:0];
+              bk_in1 <= ui_in[3:0];
             if (ui_in[5] == 1'b1)
-              bk_in2 = ui_in[3:0];
+              bk_in2 <= ui_in[3:0];
             if (ui_in[6] == 1'b1)
-              bk_in3 = ui_in[3:0];
+              bk_in3 <= ui_in[3:0];
             if (ui_in[7] == 1'b1)
-              bk_in4 = ui_in[3:0];
+              bk_in4 <= ui_in[3:0];
         end
     end
 
