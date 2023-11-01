@@ -29,7 +29,6 @@ module block (
             buf_in2 <= 0;
             buf_in3 <= 0;
             buf_in4 <= 0;
-            buf_out <= 0;
         end else begin
             buf_in1 <= in1;
             buf_in2 <= in2;
