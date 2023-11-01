@@ -29,4 +29,11 @@ module tt_um_async_proc_paulschulz  (
                   .clk(clk),
                   .rst_n(rst_n));
 
+    // Added to remove 'unused input' warnings.
+    // See: https://verilator.org/guide/latest/warnings.html#cmdoption-arg-UNUSEDSIGNAL
+    wire _unused_ok = &{1'b0,
+                    // ena,
+                    1'b0};
+
+
 endmodule
