@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.8104566"
-     inkscape:cx="272.85934"
-     inkscape:cy="227.29073"
+     inkscape:zoom="5.1207446"
+     inkscape:cx="508.32451"
+     inkscape:cy="204.95066"
      inkscape:window-width="1874"
      inkscape:window-height="1016"
      inkscape:window-x="46"
@@ -148,6 +148,46 @@
          style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
          d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
          id="path11334-4-8"
+         sodipodi:nodetypes="sssss" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker11336-0-8-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="2.6670001"
+       markerHeight="2.6670001"
+       viewBox="0 0 5.6666667 5.6666667"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path11334-4-8-7"
+         sodipodi:nodetypes="sssss" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker11336-0-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="2.6670001"
+       markerHeight="2.6670001"
+       viewBox="0 0 5.6666667 5.6666667"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path11334-4-4"
          sodipodi:nodetypes="sssss" />
     </marker>
   </defs>
@@ -959,12 +999,12 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,9.5859774,9.8079718)"
        id="text14248"
-       style="font-size:13.33333333px;line-height:1.25;font-family:Manjari;-inkscape-font-specification:'Manjari, Normal';font-variant-east_asian:normal;text-decoration:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.99999995;white-space:pre;shape-inside:url(#rect14250)" />
+       style="font-size:13.3333px;line-height:1.25;font-family:Manjari;-inkscape-font-specification:'Manjari, Normal';text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect14250);display:inline;fill:#000000;stroke-width:1" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,9.5859774,9.8079718)"
        id="text14284"
-       style="font-size:13.33333333px;line-height:1.25;font-family:Manjari;-inkscape-font-specification:'Manjari, Normal';font-variant-east_asian:normal;text-decoration:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.99999995;white-space:pre;shape-inside:url(#rect14286)" />
+       style="font-size:13.3333px;line-height:1.25;font-family:Manjari;-inkscape-font-specification:'Manjari, Normal';text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect14286);display:inline;fill:#000000;stroke-width:1" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -986,9 +1026,19 @@
        id="path11838-8"
        sodipodi:nodetypes="czzzc" />
     <path
+       style="fill:none;stroke:#0700ff;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker11336-0-5);marker-end:url(#marker11336-0-5)"
+       d="m 132.0461,55.521868 c 6.35043,0.309613 19.95419,-0.123851 21.34615,-0.142006 1.39195,-0.01816 1.66129,0.903044 1.73659,1.799622 0.0753,0.896578 0.13246,5.278955 0.13246,7.683757 0,1.221411 1.28118,1.537887 1.88902,1.539495"
+       id="path11838-8-8"
+       sodipodi:nodetypes="czzsc" />
+    <path
        style="fill:none;stroke:#0700ff;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker11336-0-8);marker-end:url(#marker11336-0-8)"
        d="m 132.04702,65.697296 c 0,0 15.37144,-0.04095 16.5451,-0.02167 1.17366,0.01928 3.06089,-0.696737 3.06089,-2.094615 0,-1.397878 0.01,-5.33467 0.01,-5.840227 0,-0.352803 0.49539,-1.352207 1.16651,-1.352207 1.14525,0 2.34935,-0.05255 4.17281,-0.05255"
        id="path11838-8-9"
        sodipodi:nodetypes="czzssc" />
+    <path
+       style="fill:none;stroke:#0700ff;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker11336-0-8-4);marker-end:url(#marker11336-0-8-4)"
+       d="m 132.06372,69.10332 c 0,0 31.09143,-0.04095 32.26509,-0.02167 1.17366,0.01928 2.98782,0.150548 2.98782,-1.24733 0,-1.397878 0.01,-0.997999 0.01,-1.503556"
+       id="path11838-8-9-7"
+       sodipodi:nodetypes="czzc" />
   </g>
 </svg>

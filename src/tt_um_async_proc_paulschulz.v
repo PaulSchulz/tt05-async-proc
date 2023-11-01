@@ -22,7 +22,7 @@ module tt_um_async_proc_paulschulz  (
     reg [3:0] bk_in1;
     reg [3:0] bk_in2;
     reg [3:0] bk_in3;
-    reg [3:0] bk in4;
+    reg [3:0] bk_in4;
     reg [3:0] bk_out;
   
     assign uo_out[3:0] = bk_out; 
