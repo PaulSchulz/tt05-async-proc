@@ -24,8 +24,12 @@ module tt_um_async_proc_paulschulz  (
     reg [3:0] bk_in3;
     reg [3:0] bk_in4;
     reg [3:0] bk_out;
-  
-    assign uo_out[3:0] = bk_out; 
+
+    // Setup output on 7-segment display
+    assign uo_out[1] = bk_out[0];
+    assign uo_out[0] = bk_out[1];
+    assign uo_out[2] = bk_out[2];
+    assign uo_out[3] = bk_out[3];
 
     always @(posedge clk) begin
         if (!rst_n) begin
