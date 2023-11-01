@@ -15,12 +15,33 @@ module block (
     input  wire       rst_n
     );
 
+    reg [3:0] buf_in1;
+    reg [3:0] buf_in2;
+    reg [3:0] buf_in3;
+    reg [3:0] buf_in4;
+    reg [3:0] buf_out;
+
+    assign out = buf_out;
+
+    always @(posedge clk) begin
+        if (reset) begin
+            buf_in1 <= 0;
+            buf_in2 <= 0;
+            buf_in3 <= 0;
+            buf_in4 <= 0;
+        else
+            buf_in1 <= in1;
+            buf_in2 <= in2;
+            buf_in3 <= in3;
+            buf_in4 <= in4;
+    end
+
     // instantiate node
-    lif node1 (.in1(in1),
-               .in2(in2),
-               .in3(in3),
-               .in4(in4),
-               .out(out),
+    lif node1 (.in1(buf_in1),
+               .in2(buf_in2),
+               .in3(buf_in3),
+               .in4(buf_in4),
+               .out(buf_out),
 
                .clk(clk),
                .rst_n(rst_n));
