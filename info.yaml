@@ -35,7 +35,7 @@ documentation:
   how_it_works: |
     See Github: https://github.com/PaulSchulz/tt05-async-proc
     
-    This circuit is an investigation into an asynchronous parallel processor.
+    This circuit is an investigation into an asynchronous parallel processor design.
 
     The design in a work in progress.
 
@@ -51,6 +51,9 @@ documentation:
     inputs of 4 bits.  The calculation is based on a deconstruction of the
     the "Arctic Circle Theorem" model. ([video](https://www.youtube.com/watch?v=Yy7Q8IWNfHM))
 
+    In a future design, it should be possible to switch the function of
+    processing node, or even make it generally programmable for other calculations.
+    
 # Instructions on how someone could test your project, include things like what
 # buttons do what and how to set the clock if needed
   how_to_test:  |
