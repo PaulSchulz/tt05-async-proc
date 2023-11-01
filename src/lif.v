@@ -55,7 +55,7 @@ module lif (
                     in2[1],
                     in3[2],
                     in4[3],
-                    lfsr[14:0], // Only top-most bit used
+                    rnd[14:0], // Only top-most bit used
                     1'b0};
 
 endmodule
