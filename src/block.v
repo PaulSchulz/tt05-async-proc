@@ -38,27 +38,19 @@ module block (
             buf_in3 <= 0;
             buf_in4 <= 0;
             node_proc <= 0;
-            node_rdy  <= 0;
         end else begin
             buf_in1 <= in1;
             buf_in2 <= in2;
             buf_in3 <= in3;
             buf_in4 <= in4;
             node_proc <= 1;
-            node_rdy  <= 0;
         end
     end
 
     always @(negedge clk) begin
         if (!rst_n) begin
-            buf_in1 <= 0;
-            buf_in2 <= 0;
-            buf_in3 <= 0;
-            buf_in4 <= 0;
-            node_proc <= 0;
             node_rdy  <= 0;
         end else begin
-            node_proc <= 0;
             node_rdy  <= 1;
         end
     end
