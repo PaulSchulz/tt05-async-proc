@@ -34,8 +34,8 @@ module tt_um_async_proc_paulschulz  (
     assign uo_out[2] = bk_out[2];
     assign uo_out[3] = bk_out[3];
 
-    assign ou_out[6] = rdy;
-    assign ou_out[7] = proc;
+    assign uo_out[6] = rdy;
+    assign uo_out[7] = proc;
 
     always @(posedge clk) begin
         if (!rst_n) begin
