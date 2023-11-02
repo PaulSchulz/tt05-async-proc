@@ -24,7 +24,12 @@ module block (
     reg [3:0] buf_in4;
     reg [3:0] buf_out;
 
-    assign out = buf_out;
+    reg node_proc;
+    reg node_rdy;
+
+    assign out  = buf_out;
+    assign proc = node_proc;
+    assign rdy  = node_rdy;
 
     always @(posedge clk) begin
         if (!rst_n) begin
@@ -32,15 +37,15 @@ module block (
             buf_in2 <= 0;
             buf_in3 <= 0;
             buf_in4 <= 0;
-            proc <= 0;
-            rdy  <= 0;
+            node_proc <= 0;
+            node_rdy  <= 0;
         end else begin
             buf_in1 <= in1;
             buf_in2 <= in2;
             buf_in3 <= in3;
             buf_in4 <= in4;
-            proc <= 1;
-            rdy  <= 0;
+            node_proc <= 1;
+            node_rdy  <= 0;
         end
     end
 
@@ -50,11 +55,11 @@ module block (
             buf_in2 <= 0;
             buf_in3 <= 0;
             buf_in4 <= 0;
-            proc <= 0;
-            rdy  <= 0;
+            node_proc <= 0;
+            node_rdy  <= 0;
         end else begin
-            proc <= 0;
-            rdy  <= 1;
+            node_proc <= 0;
+            node_rdy  <= 1;
         end
     end
         
