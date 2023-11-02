@@ -11,6 +11,9 @@ module block (
     input  wire [3:0] in4,
     output wire [3:0] out,
 
+    output wire       proc,
+    output wire       rdy,
+
     input  wire       clk,
     input  wire       rst_n
     );
@@ -29,14 +32,32 @@ module block (
             buf_in2 <= 0;
             buf_in3 <= 0;
             buf_in4 <= 0;
+            proc <= 0;
+            rdy  <= 0;
         end else begin
             buf_in1 <= in1;
             buf_in2 <= in2;
             buf_in3 <= in3;
             buf_in4 <= in4;
+            proc <= 1;
+            rdy  <= 0;
         end
     end
 
+    always @(negedge clk) begin
+        if (!rst_n) begin
+            buf_in1 <= 0;
+            buf_in2 <= 0;
+            buf_in3 <= 0;
+            buf_in4 <= 0;
+            proc <= 0;
+            rdy  <= 0;
+        end else begin
+            proc <= 0;
+            rdy  <= 1;
+        end
+    end
+        
     // instantiate node
     lif node1 (.in1(buf_in1),
                .in2(buf_in2),

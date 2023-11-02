@@ -17,7 +17,7 @@ module tt_um_async_proc_paulschulz  (
     assign uio_oe = 8'b11111111;
     assign uio_out [7:0] = 8'd0;
 
-    assign uo_out [7:4] = 4'd0;
+    assign uo_out [5:4] = 0;
 
     reg [3:0] bk_in1;
     reg [3:0] bk_in2;
@@ -25,11 +25,17 @@ module tt_um_async_proc_paulschulz  (
     reg [3:0] bk_in4;
     reg [3:0] bk_out;
 
+    wire      proc;
+    wire      rdy;
+
     // Setup output on 7-segment display
     assign uo_out[1] = bk_out[0];
     assign uo_out[0] = bk_out[1];
     assign uo_out[2] = bk_out[2];
     assign uo_out[3] = bk_out[3];
+
+    assign ou_out[6] = rdy;
+    assign ou_out[7] = proc;
 
     always @(posedge clk) begin
         if (!rst_n) begin
@@ -56,6 +62,10 @@ module tt_um_async_proc_paulschulz  (
                   .in3(bk_in3),
                   .in4(bk_in4),
                   .out(bk_out),
+
+                  .proc(bk_proc),
+                  .rdy(bk_rdy),
+
 
                   .clk(clk),
                   .rst_n(rst_n));
