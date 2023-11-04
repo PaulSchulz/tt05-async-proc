@@ -66,7 +66,6 @@ module tt_um_async_proc_paulschulz  (
                   .proc(bk_proc),
                   .rdy(bk_rdy),
 
-
                   .clk(clk),
                   .rst_n(rst_n));
 
